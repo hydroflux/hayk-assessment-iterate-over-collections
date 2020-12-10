@@ -23,8 +23,19 @@ def company_readout companies
 end 
 
 
-def all_sizes companies
-    companies.reduce do |total_size, company|
-        binding.pry
-    end
-end
+# def total_size companies
+#     companies.reduce {|company| company.size}
+# end
+
+
+# def companies_over_100 companies
+#     company_list = companies.filter do |company|
+#         if company.size > 100
+#             company.name
+#         end
+#     end
+# end
+
+
+
+binding.pry
