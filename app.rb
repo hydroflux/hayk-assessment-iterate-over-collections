@@ -1,3 +1,5 @@
+require 'pry'
+
 class Company
     attr_accessor :name, :size
 
@@ -5,6 +7,7 @@ class Company
         @name = name
         @size = size
     end
+
 end
 
 companies = [
@@ -14,3 +17,7 @@ companies = [
 ]
 
 ### Your code below this
+
+def company_readout companies
+    companies.map {|company| company.name + ' - ' + company.size.to_s}
+end 
