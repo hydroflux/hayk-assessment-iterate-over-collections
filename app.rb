@@ -21,3 +21,10 @@ companies = [
 def company_readout companies
     companies.map {|company| company.name + ' - ' + company.size.to_s}
 end 
+
+
+def all_sizes companies
+    companies.reduce do |total_size, company|
+        binding.pry
+    end
+end
